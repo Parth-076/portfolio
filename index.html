@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Parth Ramakant Jadhav — Computer Engineering student, software developer, and competitive programmer.">
+    <title>Parth Jadhav | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cursor Spotlight Overlay -->
+    <div id="cursor-spotlight"></div>
+
+    <!-- ══════════════════════════════════════════════ NAVBAR ══════════════════════════════════════════════ -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">PJ<span class="accent">.</span></a>
+            <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ══════════════════════════════════════════════ HERO ══════════════════════════════════════════════ -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-effects">
+            <canvas id="particle-canvas"></canvas>
+            <div class="hero-orb hero-orb--1"></div>
+            <div class="hero-orb hero-orb--2"></div>
+            <div class="hero-orb hero-orb--3"></div>
+            <div class="hero-grid-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-greeting reveal">Hello, I'm</p>
+            <h1 class="hero-name reveal">
+                <span class="hero-name__first">Parth Ramakant</span>
+                <span class="hero-name__last">Jadhav<span class="accent">.</span></span>
+            </h1>
+            <div class="hero-terminal reveal">
+                <div class="terminal-header">
+                    <span class="terminal-dot terminal-dot--red"></span>
+                    <span class="terminal-dot terminal-dot--yellow"></span>
+                    <span class="terminal-dot terminal-dot--green"></span>
+                    <span class="terminal-title">parth@portfolio:~</span>
+                </div>
+                <div class="terminal-body">
+                    <span class="terminal-prompt">&gt;</span>
+                    <span id="terminal-text" class="terminal-text"></span>
+                    <span class="terminal-cursor">|</span>
+                </div>
+            </div>
+            <div class="hero-cta reveal">
+                <a href="#projects" class="btn btn--primary">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn--outline">
+                    <span>Contact Me</span>
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <div class="hero-socials reveal">
+                <a href="https://www.linkedin.com/in/parth-jadhav-b3a514380" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Parth-076" class="social-icon" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://leetcode.com/u/PJ_076/" class="social-icon" aria-label="LeetCode" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-code"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════ ABOUT ══════════════════════════════════════════════ -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">01</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-portrait reveal">
+                    <div class="portrait-frame">
+                        <div class="portrait-placeholder">
+                            <img src="profile.jpg" alt="Parth Jadhav" class="portrait-img">
+                        </div>
+                        <div class="portrait-border"></div>
+                    </div>
+                    <div class="portrait-decoration"></div>
+                </div>
+                <div class="about-text reveal">
+                    <h3 class="about-headline">Dedicated to <span class="accent">building impactful solutions</span></h3>
+                    <p>
+                        I'm a Computer Engineering student at <strong>Rajarambapu Institute of Technology</strong> with a current CGPA of <strong>8.83</strong> (Expected Graduation: 2028). I have a strong foundation in programming, algorithms, and system design.
+                    </p>
+                    <p>
+                        My passion lies in crafting elegant, efficient code and building solutions that solve real-world problems. From competitive programming to hands-on engineering projects, I thrive on challenges that push the boundaries of what's possible with technology.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="300">0</span><span class="accent">+</span>
+                            <span class="stat-label">Problems Solved</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="8">0</span><span class="stat-decimal">.83</span>
+                            <span class="stat-label">CGPA</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="50">0</span><span class="accent">+</span>
+                            <span class="stat-label">Day Streak</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════ SKILLS ══════════════════════════════════════════════ -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">02</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Languages -->
+                <div class="skill-category reveal">
+                    <div class="skill-category__icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="skill-category__title">Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="90">C/C++</span>
+                        <span class="skill-tag" data-level="80">Python</span>
+                        <span class="skill-tag" data-level="75">SQL</span>
+                        <span class="skill-tag" data-level="85">HTML</span>
+                        <span class="skill-tag" data-level="80">CSS</span>
+                        <span class="skill-tag" data-level="70">JavaScript</span>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-bar__header">
+                                <span>C/C++</span><span>90%</span>
+                            </div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar__header">
+                                <span>Python</span><span>80%</span>
+                            </div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar__header">
+                                <span>SQL</span><span>75%</span>
+                            </div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar__header">
+                                <span>HTML &amp; CSS</span><span>85%</span>
+                            </div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar__header">
+                                <span>JavaScript</span><span>70%</span>
+                            </div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Developer Tools -->
+                <div class="skill-category reveal">
+                    <div class="skill-category__icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="skill-category__title">Developer Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Linux</span>
+                    </div>
+                </div>
+                <!-- Core Domains -->
+                <div class="skill-category reveal">
+                    <div class="skill-category__icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 class="skill-category__title">Core Domains &amp; Interests</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Cloud Native</span>
+                        <span class="skill-tag">Competitive Programming</span>
+                        <span class="skill-tag">Data Analysis</span>
+                        <span class="skill-tag">Data Visualization (Python)</span>
+                    </div>
+                </div>
+                <!-- Soft Skills -->
+                <div class="skill-category reveal">
+                    <div class="skill-category__icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="skill-category__title">Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Leadership</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════ PROJECTS ══════════════════════════════════════════════ -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">03</span>
+                <h2 class="section-title">Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card reveal" id="project-eedp">
+                    <div class="project-card__glow"></div>
+                    <div class="project-card__header">
+                        <div class="project-card__icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <span class="project-card__badge">Team Leader</span>
+                    </div>
+                    <h3 class="project-card__title">EEDP — Automated Quick Docking Charging System</h3>
+                    <p class="project-card__subtitle">for e-Bus Fleet</p>
+                    <p class="project-card__desc">
+                        Engineered a safe and automated charging dock using Arduino-based control and sensing for improved urban transit efficiency. Designed the full electro-mechanical docking sequence with safety interlocks.
+                    </p>
+                    <div class="project-card__tags">
+                        <span>Arduino</span>
+                        <span>Embedded</span>
+                        <span>IoT</span>
+                        <span>Sensors</span>
+                    </div>
+                    <div class="project-card__link">
+                        <span>View Details</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </article>
+                <!-- Project 2 -->
+                <article class="project-card reveal" id="project-canteen">
+                    <div class="project-card__glow"></div>
+                    <div class="project-card__header">
+                        <div class="project-card__icon">
+                            <i class="fas fa-receipt"></i>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">Canteen Bill Management System</h3>
+                    <p class="project-card__desc">
+                        Built a menu-driven billing system in C utilizing file handling and automated GST calculation. Focused on structured programming, modular design, and robust input validation.
+                    </p>
+                    <div class="project-card__tags">
+                        <span>C</span>
+                        <span>File I/O</span>
+                        <span>CLI</span>
+                        <span>Automation</span>
+                    </div>
+                    <div class="project-card__link">
+                        <span>View Details</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </article>
+                <!-- Project 3 -->
+                <article class="project-card reveal" id="project-guessing">
+                    <div class="project-card__glow"></div>
+                    <div class="project-card__header">
+                        <div class="project-card__icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">Interactive Number Guessing Game</h3>
+                    <p class="project-card__desc">
+                        Developed a command-line game using C and standard libraries where the computer intelligently guesses the user's number through a binary-search inspired algorithm.
+                    </p>
+                    <div class="project-card__tags">
+                        <span>C</span>
+                        <span>Algorithms</span>
+                        <span>Game Logic</span>
+                        <span>CLI</span>
+                    </div>
+                    <div class="project-card__link">
+                        <span>View Details</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════ EXPERIENCE ══════════════════════════════════════════════ -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">04</span>
+                <h2 class="section-title">Experience &amp; Leadership</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <!-- Timeline item 1 -->
+                <div class="timeline-item reveal" id="exp-avp">
+                    <div class="timeline-marker">
+                        <div class="timeline-marker__dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-content__badge">Leadership</div>
+                        <h3 class="timeline-content__title">Assistant Vice President</h3>
+                        <p class="timeline-content__org">RIT Vivekvahini</p>
+                        <p class="timeline-content__desc">
+                            Facilitated weekly discussions, debates, and short film analyses to foster critical thinking among peers. Served as a session anchor, guiding dialogues and ensuring inclusive participation.
+                        </p>
+                    </div>
+                </div>
+                <!-- Timeline item 2 -->
+                <div class="timeline-item reveal" id="exp-event-head">
+                    <div class="timeline-marker">
+                        <div class="timeline-marker__dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-content__badge">Event Management</div>
+                        <h3 class="timeline-content__title">Event Head</h3>
+                        <p class="timeline-content__org">Ctrl + Alt + Relationship Workshop</p>
+                        <p class="timeline-content__desc">
+                            Managed the complete event lifecycle from campaigning to execution. Led a coordinated team, handling logistics, promotion, and on-ground management for a successful workshop event.
+                        </p>
+                    </div>
+                </div>
+                <!-- Timeline item 3 -->
+                <div class="timeline-item reveal" id="exp-secretary">
+                    <div class="timeline-marker">
+                        <div class="timeline-marker__dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-content__badge">Technical</div>
+                        <h3 class="timeline-content__title">Assistant Secretary</h3>
+                        <p class="timeline-content__org">Oyster Kode Club</p>
+                        <p class="timeline-content__desc">
+                            Maintained a 50+ day streak on LeetCode, solved 300+ problems on GeeksforGeeks, and actively mentored peers in core C/C++ fundamentals. Contributed to building a culture of consistent practice.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════ ACHIEVEMENTS ══════════════════════════════════════════════ -->
+    <section id="achievements" class="section achievements">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">05</span>
+                <h2 class="section-title">Achievements</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="achievements-showcase">
+                <div class="achievement-card reveal" id="achievement-code404">
+                    <div class="achievement-card__icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="achievement-card__content">
+                        <h3>Code 404 Coding Competition</h3>
+                        <p class="achievement-card__position">
+                            <i class="fas fa-medal"></i>
+                            Runner-up — 2<sup>nd</sup> Place
+                        </p>
+                        <p>Secured 2nd place by solving complex algorithmic problems under strict time constraints, competing against highly skilled peers in a pressure-filled coding environment.</p>
+                    </div>
+                    <div class="achievement-card__shine"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════ CONTACT ══════════════════════════════════════════════ -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">06</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3>Let's <span class="accent">connect</span> and build something great.</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <div class="contact-details">
+                        <a href="mailto:jadhavparth076@gmail.com" class="contact-item" id="contact-email">
+                            <div class="contact-item__icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="contact-item__label">Email</span>
+                                <span class="contact-item__value">jadhavparth076@gmail.com</span>
+                                <span class="contact-item__value">2403123@ritindia.edu</span>
+                            </div>
+                        </a>
+                        <a href="tel:+919011093223" class="contact-item" id="contact-phone">
+                            <div class="contact-item__icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <span class="contact-item__label">Phone</span>
+                                <span class="contact-item__value">+91-9011093223</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://www.linkedin.com/in/parth-jadhav-b3a514380" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Parth-076" class="social-icon" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://leetcode.com/u/PJ_076/" class="social-icon" aria-label="LeetCode" target="_blank" rel="noopener noreferrer"><i class="fas fa-code"></i></a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form reveal" onsubmit="return false;">
+                    <div class="form-group">
+                        <input type="text" id="form-name" name="name" required placeholder=" ">
+                        <label for="form-name">Your Name</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="form-email" name="email" required placeholder=" ">
+                        <label for="form-email">Your Email</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="form-message" name="message" rows="4" required placeholder=" "></textarea>
+                        <label for="form-message">Your Message</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <button type="submit" id="form-submit" class="btn btn--primary btn--full">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════ FOOTER ══════════════════════════════════════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">PJ<span class="accent">.</span></a>
+                <p>&copy; 2026 Parth Jadhav. Crafted with passion.</p>
+                <div class="footer-right">
+                    <div class="footer-socials">
+                        <a href="https://www.linkedin.com/in/parth-jadhav-b3a514380" class="social-icon social-icon--sm" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Parth-076" class="social-icon social-icon--sm" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://leetcode.com/u/PJ_076/" class="social-icon social-icon--sm" aria-label="LeetCode" target="_blank" rel="noopener noreferrer"><i class="fas fa-code"></i></a>
+                    </div>
+                    <button id="easter-egg-toggle" class="easter-egg-btn" aria-label="Secret terminal">
+                        <i class="fas fa-terminal"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Easter Egg Terminal Panel -->
+    <div id="easter-egg-panel" class="easter-egg-panel">
+        <div class="easter-egg-panel__header">
+            <span class="easter-egg-panel__title"><i class="fas fa-terminal"></i> secret_terminal.sh</span>
+            <button id="easter-egg-close" class="easter-egg-panel__close" aria-label="Close terminal">&times;</button>
+        </div>
+        <div class="easter-egg-panel__body">
+            <p class="easter-egg-panel__prompt">$ cat /dev/humor</p>
+            <p id="easter-egg-joke" class="easter-egg-panel__joke"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
